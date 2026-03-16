@@ -76,17 +76,6 @@ body::before{
   letter-spacing:.05em;
 }
 
-/* DEDICATION */
-
-.dedication{
-  font-size:clamp(1rem,2vw,1.2rem);
-  color:rgba(243,237,228,.85);
-}
-
-.dedication p{
-  margin:.15rem 0;
-}
-
 /* VERSE CARD */
 
 .verse-card{
@@ -168,6 +157,25 @@ button:hover{
   background:rgba(255,255,255,.12);
 }
 
+/* BOTTOM DEDICATION */
+
+.dedication-bottom{
+  position:fixed;
+  bottom:50px;
+  left:50%;
+  transform:translateX(-50%);
+
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(1rem,2vw,1.15rem);
+  color:rgba(243,237,228,.85);
+
+  text-align:center;
+}
+
+.dedication-bottom p{
+  margin:.15rem 0;
+}
+
 /* MONOGRAM */
 
 .monogram{
@@ -201,11 +209,6 @@ button:hover{
 
 <h1 class="page-title">The Goal</h1>
 
-<div class="dedication">
-<p>Michelle,</p>
-<p>Where words fall short, thank you.</p>
-</div>
-
 <div class="verse-card">
 
 <blockquote>
@@ -222,6 +225,11 @@ button:hover{
 
 <button onclick="loadRandom()">Another page</button>
 
+</div>
+
+<div class="dedication-bottom">
+<p>Michelle,</p>
+<p>Where words fall short, thank you.</p>
 </div>
 
 <div class="monogram">S · H</div>
