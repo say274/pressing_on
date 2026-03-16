@@ -70,7 +70,7 @@ body::before{
 
 .page-title{
   font-family:"Playfair Display",serif;
-  font-size:clamp(2.4rem,5vw,3.5rem);
+  font-size:clamp(1.8rem,3.5vw,2.3rem);
   font-style:italic;
   font-weight:400;
   letter-spacing:.05em;
@@ -151,23 +151,25 @@ button{
   font-size:1rem;
 
   cursor:pointer;
+
+  margin-bottom:140px;
 }
 
 button:hover{
   background:rgba(255,255,255,.12);
 }
 
-/* BOTTOM DEDICATION */
+/* BOTTOM MESSAGE */
 
 .dedication-bottom{
   position:fixed;
-  bottom:50px;
+  bottom:60px;
   left:50%;
   transform:translateX(-50%);
 
   font-family:"Cormorant Garamond",serif;
   font-size:clamp(1rem,2vw,1.15rem);
-  color:rgba(243,237,228,.85);
+  color:#f3ede4;
 
   text-align:center;
 }
@@ -198,6 +200,33 @@ button:hover{
 @keyframes fadeIn{
   from{opacity:0; transform:translateY(8px);}
   to{opacity:1; transform:translateY(0);}
+}
+
+/* MOBILE POLISH */
+
+@media (max-width:600px){
+
+  .content{
+    gap:1.6rem;
+  }
+
+  .verse-card{
+    padding:1.4rem 1.2rem 1.2rem;
+  }
+
+  blockquote{
+    font-size:1.2rem;
+    line-height:1.75;
+  }
+
+  .subline{
+    font-size:1.35rem;
+  }
+
+  img{
+    max-height:58vh;
+  }
+
 }
 
 </style>
